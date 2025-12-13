@@ -1,8 +1,8 @@
 package ASSIGNMENT_1.SET_B;
 
-import java.util.Enumeration;
-import java.util.Hashtable;
-import javax.print.Doc;
+import java.io.*;
+import java.util.*;
+
 
 public class A1SBQ6 {
     public static void main(String[] args) throws IOException {
@@ -22,16 +22,28 @@ public class A1SBQ6 {
         Enumeration<String> k = studentDetail.keys();
         Enumeration<Double> v = studentDetail.elements();
         
-        System.out.println("The Details Of Students: \nName:\tPercentage:");
+        System.out.println("The Details Of Students: \nName:\t\t\t|\tPercentage:");
 
         try {
+            int i = 1;
             while (keys.hasMoreElements() && values.hasMoreElements()) {
-                System.out.println(keys.nextElement() + "\t" + values.nextElement());
+                System.out.println(i + ".] " + keys.nextElement() + "\t\t|\t" + values.nextElement());
+                i++;
             }
 
-            System.out.println();
+            System.out.print("\nEnter Student Name To Get Percentage: ");
+            String searchName = sc.nextLine();
+
+            while (k.hasMoreElements() && v.hasMoreElements()) {
+                String temp = k.nextElement();
+                if (searchName.equals(temp)) {
+                    System.out.println("\nThe Percentage Of Specific Student Is: " + v.nextElement() + "\n");
+                }
+                v.nextElement();
+            }
 
         } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
         }
     }
 }
