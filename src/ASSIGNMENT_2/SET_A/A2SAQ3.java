@@ -1,3 +1,5 @@
+package ASSIGNMENT_2.SET_A;
+
 /* 
    Q3: Write a Java program to insert multiple records into student table.
 */
