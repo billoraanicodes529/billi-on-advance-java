@@ -1,0 +1,52 @@
+// Main command to enter psql:
+
+sudo -i -u postgres
+
+
+// Enter password, and then enter "psql" in the pc prompt:
+
+psql
+
+
+// Now you are on the postgreSQL cmd shell and can execute sql commands:
+
+// postgres=#
+
+
+// List databases:
+
+\l
+
+
+// Connect to your database:
+
+\c database_name
+
+
+// Create a table:
+
+CREATE TABLE student (rno INT PRIMARY KEY, name VARCHAR(50), address VARCHAR(100), contact_no VARCHAR(15));
+
+
+// Exit PostgreSQL:
+
+\q
+
+// INSERT statement for the above table:
+
+INSERT INTO student (rno, name, address, contact_no) VALUES (1, 'Aditya Kamble', 'Pune, Maharashtra', '7089464875');
+INSERT INTO student (rno, name, address, contact_no) VALUES (2, 'Yusuf Khan', 'Kolhapur, Maharashtra', '2473985342');
+INSERT INTO student (rno, name, address, contact_no) VALUES (3, 'Umar Shaikh', 'Pune, Maharashtra', '7463675354');
+
+
+// Create Employee table and its rows
+
+CREATE TABLE employee (emp_id INT PRIMARY KEY, emp_name VARCHAR(50), emp_address VARCHAR(100), emp_contact_no VARCHAR(15), emp_salary VARCHAR(15));
+                             ^
+INSERT INTO employee (emp_id, emp_name, emp_address, emp_contact_no, emp_salary) VALUES (1, 'Aditya Kamble', 'Pune, Maharashtra', '7089464875', 30000);
+INSERT INTO employee (emp_id, emp_name, emp_address, emp_contact_no, emp_salary) VALUES (2, 'Yusuf Khan', 'Kolhapur, Maharashtra', '2473985342', 35000);
+INSERT INTO employee (emp_id, emp_name, emp_address, emp_contact_no, emp_salary) VALUES (3, 'Umar Shaikh', 'Pune, Maharashtra', '7463675354', 40000);
+
+
+// 
+
