@@ -13,9 +13,9 @@ class A2SAQ3 {
         try { 
             Class.forName("org.postgresql.Driver"); 
             Connection conn = DriverManager.getConnection(
-                "jdbc:postgresql://localhost:5432/tybcs", 
+                "jdbc:postgresql://localhost:5432/tybcs210", 
                 "postgres", 
-                "postgres"
+                "1234"
             ); 
 
             if (conn == null) { 
