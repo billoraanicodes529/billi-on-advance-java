@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+    <servlet>
+        <servlet-name>HelloWorld</servlet-name>
+        <servlet-class>HelloWorld</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HelloWorld</servlet-name>
+        <url-pattern>/HelloWorld</url-pattern>
+    </servlet-mapping>
+    
+    <!-- // Q1: Write a Java Servlet to display Hello World. -->
+    
+    <servlet>
+        <servlet-name>A3SAQ1</servlet-name>
+        <servlet-class>A3SAQ1</servlet-class>
+    </servlet>
+   
+
+    <servlet-mapping>
+        <servlet-name>A3SAQ1</servlet-name>
+        <url-pattern>/display</url-pattern>
+    </servlet-mapping>
+    
+    <!-- // Q2: Write a Java Servlet to accept two numbers from user and perform their addition -->
+    
+    <servlet>
+        <servlet-name>A3SAQ2</servlet-name>
+        <servlet-class>A3SAQ2</servlet-class>
+    </servlet>
+   
+
+    <servlet-mapping>
+        <servlet-name>A3SAQ2</servlet-name>
+        <url-pattern>/A3SAQ2</url-pattern>
+    </servlet-mapping>
+    
+    <!-- // Q3: Write a Java Servlet to accept a user name and greet the user. -->
+    
+    <servlet>
+        <servlet-name>A3SAQ3</servlet-name>
+        <servlet-class>A3SAQ3</servlet-class>
+    </servlet>
+   
+
+    <servlet-mapping>
+        <servlet-name>A3SAQ3</servlet-name>
+        <url-pattern>/A3SAQ3</url-pattern>
+    </servlet-mapping>
+    
+    <!--    Q4: Design a servlet that provides information about a HTTP request from a client... -->
+    
+    <servlet>
+        <servlet-name>A3SAQ4</servlet-name>
+        <servlet-class>A3SAQ4</servlet-class>
+    </servlet>
+   
+
+    <servlet-mapping>
+        <servlet-name>A3SAQ4</servlet-name>
+        <url-pattern>/info</url-pattern>
+    </servlet-mapping>
+    
+    <!--    Q5: Write a servlet which counts how many times a user has visited a web page... -->
+    
+    <servlet>
+        <servlet-name>A3SAQ5</servlet-name>
+        <servlet-class>A3SAQ5</servlet-class>
+    </servlet>
+   
+
+    <servlet-mapping>
+        <servlet-name>A3SAQ5</servlet-name>
+        <url-pattern>/visit</url-pattern>
+    </servlet-mapping>
+</web-app>

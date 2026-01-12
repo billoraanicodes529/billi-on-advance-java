@@ -59,3 +59,16 @@ INSERT INTO student1 (rno, name, percentage) VALUES (3, 'Umar Shaikh', 75.7);
 
 CREATE TABLE Project (project_id INTEGER PRIMARY KEY, project_name VARCHAR(200) NOT NULL, project_description TEXT, project_status VARCHAR(50));
 
+
+// Mobile table create command:
+
+CREATE TABLE public.mobile (model_number INTEGER PRIMARY KEY, model_name VARCHAR(100) NOT NULL, model_color VARCHAR(50), sim_type VARCHAR(50), network_type VARCHAR(20), battery_capacity INTEGER, internal_storage INTEGER, ram VARCHAR(50), processor_type VARCHAR(100));
+
+// Mobile table insert command:
+
+INSERT INTO mobile VALUES (203, 'OnePlus 12', 'Titan Black', 'Dual Nano', '5G', 5400, 256, 12, 'Snapdragon 8 Gen 3');
+INSERT INTO mobile VALUES (204, 'Apple iPhone 15 Pro', 'Natural Titanium', 'Nano/eSIM', '5G', 3349, 256, 8, 'Apple A17 Pro');
+INSERT INTO mobile VALUES (205, 'Samsung Galaxy S24 Ultra', 'Titanium Gray', 'Dual Nano/eSIM', '5G', 5000, 256, 12, 'Snapdragon 8 Gen 3');
+
+
+
