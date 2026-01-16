@@ -16,16 +16,11 @@ public class A2SBQ3 {
             String name = br.readLine();
 
             String sql = "UPDATE student1 SET name = '" + name + "' WHERE roll = " + r;
-            int result = stmt.executeUpdate(sql);
+	    stmt.executeUpdate(sql);
 
-            if (result > 0) {
-                System.out.println("Record Updated Successfully.");
-            } else {
-                System.out.println("No Record Found With Roll No: " + r);
-            }
+            System.out.println("Record Updated Successfully.");
 
         } catch (SQLException | IOException e) {
-            System.err.println("Error: " + e.getMessage());
             e.printStackTrace();
         }
     }
