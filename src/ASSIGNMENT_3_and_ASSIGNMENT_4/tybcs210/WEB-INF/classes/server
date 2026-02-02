@@ -1,0 +1,3 @@
+http://192.168.36.86.:8090/tybcs210/
+
+cd /home/tomcat9/webapps/tybcs210/WEB-INF/classes

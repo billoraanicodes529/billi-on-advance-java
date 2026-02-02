@@ -80,4 +80,67 @@
         <servlet-name>A3SAQ5</servlet-name>
         <url-pattern>/visit</url-pattern>
     </servlet-mapping>
+
+    <!--     Q6: Write a java servlet which accepts a font name and background color from user... -->
+    
+    <servlet>
+        <servlet-name>A3SAQ6</servlet-name>
+        <servlet-class>A3SAQ6</servlet-class>
+    </servlet>
+   
+
+    <servlet-mapping>
+        <servlet-name>A3SAQ6</servlet-name>
+        <url-pattern>/fontbg</url-pattern>
+    </servlet-mapping>
+
+    <!--     Q1b: Write a servlet program to create a shopping mall... -->
+    
+    <servlet>
+        <servlet-name>A3SbQ1a</servlet-name>
+        <servlet-class>A3SbQ1a</servlet-class>
+    </servlet>
+   
+
+    <servlet-mapping>
+        <servlet-name>A3SbQ1a</servlet-name>
+        <url-pattern>/sumitem1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>A3SbQ1b</servlet-name>
+        <servlet-class>A3SbQ1b</servlet-class>
+    </servlet>
+   
+
+    <servlet-mapping>
+        <servlet-name>A3SbQ1b</servlet-name>
+        <url-pattern>/sumitem2</url-pattern>
+    </servlet-mapping>
+
+    <!--     BQ2: Design an HTML page containing 4 option buttons (Painting, Drawing, Singing and swimming)... -->
+    
+    <servlet>
+        <servlet-name>A3SBQ2_Hobby</servlet-name>
+        <servlet-class>A3SBQ2_Hobby</servlet-class>
+    </servlet>
+   
+
+    <servlet-mapping>
+        <servlet-name>A3SBQ2_Hobby</servlet-name>
+        <url-pattern>/hobby</url-pattern>
+    </servlet-mapping>
+
+    <!--     BQ3: Write a java servlet which accept seat number,name of student and college... -->
+    
+    <servlet>
+        <servlet-name>A3SBQ3_College</servlet-name>
+        <servlet-class>A3SBQ3_College</servlet-class>
+    </servlet>
+   
+
+    <servlet-mapping>
+        <servlet-name>A3SBQ3_College</servlet-name>
+        <url-pattern>/college</url-pattern>
+    </servlet-mapping>
 </web-app>
